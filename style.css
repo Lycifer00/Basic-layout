@@ -1,0 +1,190 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 1fr 5fr 1fr;
+    grid-template-areas: "Header Header Header" "NavBar NavBar NavBar" "Left Center Right" "Footer Footer Footer";
+    grid-gap: 10px;
+    height: 100vh;
+}
+
+/*Logo and Banner*/ 
+#header {
+    grid-area: Header;
+    /*background: burlywood;*/
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "Logo Banner";
+    grid-gap: 10px;
+    height: 150px;
+}
+
+#logo {
+    grid-area: Logo;
+    background: darkseagreen;
+}
+
+#banner {
+    grid-area: Banner;
+    background: chocolate;
+}
+
+/*navbar*/
+#navbar {
+    grid-area: NavBar;
+    background: darksalmon;
+    height: 60px;
+}
+
+#navbar a {
+    position: relative;
+    top: 20px;
+    left: 15px;
+}
+
+#search {
+    position: relative;
+    text-align: right;
+    right: 20px;
+}
+
+#search input {
+    border: blue 1px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*Left Bar*/
+#left {
+    grid-area: Left;
+    /*background: darkkhaki;*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 3fr;
+    grid-template-areas: "LeftBar1" "LeftBar2";
+    grid-gap: 10px;
+    height: 600px;
+}
+
+#left-bar-top {
+    grid-area: LeftBar1;
+    background: bisque;
+}
+
+#left-bar-bottom {
+    grid-area: LeftBar2;
+    background: darkturquoise;
+}
+
+/*Content Center*/
+#main-center {
+    grid-area: Center;
+    /*background: cornflowerblue;*/
+    display: grid;
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas: "Line1" "Line2";
+    grid-gap: 10px;
+    height: 700px;
+}
+
+#line1 {
+    grid-area: Line1;
+    /*background: beige;*/
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-template-areas: "HotNews Photos";
+    grid-gap: 10px;
+}
+
+#hotnews {
+    grid-area: HotNews;
+    background: darkolivegreen;
+}
+
+#photos {
+    grid-area: Photos;
+    background: chartreuse;
+}
+
+#line2 {
+    grid-area: Line2;
+    /*background: cyan;*/
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-areas: "News1 News2 News3" "News4 News5 News6";
+    grid-gap: 10px;
+}
+
+#news1 {
+    grid-area: News1;
+    background: blanchedalmond;
+}
+
+#news2 {
+    grid-area: News2;
+    background: blanchedalmond;
+}
+
+#news3 {
+    grid-area: News3;
+    background: blanchedalmond;
+}
+
+#news4 {
+    grid-area: News4;
+    background: blanchedalmond;
+}
+
+#news5 {
+    grid-area: News5;
+    background: blanchedalmond;
+}
+
+#news6 {
+    grid-area: News6;
+    background: blanchedalmond;
+}
+
+/*Right Bar*/
+#right {
+    grid-area: Right;
+    /*background: chartreuse;*/
+    display: grid;
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-template-areas: "Calendar" "Chart" "Map";
+    grid-gap: 10px;
+    height: 650px;
+}
+#calendar {
+    grid-area: Calendar;
+    background: bisque;
+}
+#chart{
+    grid-area: Chart;
+    background: darkseagreen;
+}
+#map{
+    grid-area: Map;
+    background: cornflowerblue;
+}
+
+/*Footer*/
+#footer {
+    grid-area: Footer;
+    background: cornsilk;
+    position: relative;
+}
+#footer p{
+    position: relative;
+    font-family: solid Arial;
+    font-size: medium;
+    top: 10px;
+    left: 15px;
+}
+#link-footer{
+    position: relative;
+    text-align: right;
+    bottom: 25px;
+    right: 10px;
+}
